@@ -76,9 +76,50 @@ button {
   margin-left: 10px;
   border-radius: 8px;
 
-  background-color: #02799D;
+  background-color: #02799d;
   color: #fff;
-  
+
   font-size: 14px;
   font-weight: 700;
+}
+
+.modal-container {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: grid;
+  place-content: center;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  width: 210px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+.modal h1 {
+  font-family: sans-serif;
+  text-align: center;
+  
+  padding: 25px;
+}
+
+.modal button {
+  background-color: #fff;
+  border: none;
+
+  width: 24px;
+  height: 24px;
+
+  position: absolute;
+  top: 5px;
+  right: 8px;
+
+ 
 }
