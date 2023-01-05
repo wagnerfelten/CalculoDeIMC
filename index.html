@@ -21,28 +21,29 @@
           </div>
 
           <div class="form-container">
-            <form action="" id="imc">
-              <label for="peso">Peso (kg)</label>
-              <input type="number" placeholder="60" />
+            <form id="imc">
+              <label for="weigth" >Peso (kg)</label>
+              <input type="text" id="weigth" placeholder="60" />
 
-              <label for="altura">Altura (m)</label>
-              <input type="number" placeholder="165" />
-            </form>
+              <label for="heigth">Altura (m)</label>
+              <input type="text" id="heigth" placeholder="165" />
+           
 
-            <button class="btn1">
+            <button class="btn1" type="submit">
               Cálculo IMC
               <img src="./public/img/Seta.png" alt="seta" />
             </button>
+          </form>
           </div>
         </section>
       </main>
     </div>
 
-    <div class="modal-container">
-      <section class="modal">
+    <div class="modal-container ">
+      <section class="modal ">
         <div class="imc-patient">
 
-          <button class="close">
+          <button class="close" onclick="closeModal()">
             <img src="./public/img/close.svg" alt="">
           </button>
 
@@ -51,4 +52,6 @@
       </section>
     </div>
   </body>
+
+  <script src="./src/js/main.js"></script>
 </html>

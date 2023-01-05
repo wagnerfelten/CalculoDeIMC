@@ -72,15 +72,22 @@ body {
 button {
   width: 240px;
   height: 42px;
+  margin-top: 24px;
 
   margin-left: 10px;
   border-radius: 8px;
 
   background-color: #02799d;
   color: #fff;
+  cursor: pointer;
 
   font-size: 14px;
   font-weight: 700;
+}
+
+button:hover{
+  background-color: #084f64;
+
 }
 
 .modal-container {
@@ -93,6 +100,11 @@ button {
 
   opacity: 0;
   visibility: hidden;
+}
+
+.open{
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal {
